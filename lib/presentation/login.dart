@@ -6,7 +6,7 @@ class Login extends StatefulWidget {
   const Login({super.key});
 
   @override
-  _LoginState createState() => _LoginState();
+  State<Login> createState() => _LoginState();
 }
 
 class _LoginState extends State<Login> {
@@ -24,6 +24,7 @@ class _LoginState extends State<Login> {
     final _formKey = GlobalKey<FormState>();
     return Scaffold(
       body: Form(
+        key: _formKey,
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
