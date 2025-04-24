@@ -80,7 +80,7 @@ class _OrderPageState extends State<OrderPage> {
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
                   calculateTotalPrice();
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => DetailOrderPage(
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => DetailOderPage(
                     jumlahMakananController: jumlahMakananController.text,
                     jumlahMinumanController: jumlahMinumanController.text,
                     makananController: makananController.text,
